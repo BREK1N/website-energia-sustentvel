@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto Mono", monospace;
+}
+
+/* HEADLINE */
+
+.headline{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+
+/* botao */
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn{
+    padding: 0.8rem 3rem;
+
+    border-radius: 10px;
+
+    background: rgb(3, 159, 3);
+
+    transition: 500ms;
+}
+
+.btn:hover{
+    padding: 0.83rem 3.2rem;
+    background: rgb(3, 117, 3); ;
+
+}
+
+
+
+
+/* navbar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+
+    border: 0.1rem solid black;
+
+    background: #111;
+
+    opacity: 0.9;
+
+    position: fixed;
+
+
+}
+
+#navbar-container{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 3rem;
+
+}
+
+#nav-itens{
+    display: flex;
+}
+
+#itens{
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+}
+
+#itens li{
+    margin-left: 2rem;
+    color: #eee;
+}
+
+#itens li:first-child{
+    margin-left: 0rem;
+}
+
+
+#logo{
+    color: rgb(3, 209, 3);
+    font-size: 1.6rem;
+
+    text-shadow: 12px 7px 100px rgb(3, 255, 3, 0.90);
+}
+
+/* showcase */
+
+#showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 95vh;
+
+
+    background: url('/img/energia_sus.jpg') no-repeat center center/cover;
+
+}
+
+#showcase-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#showcase-container h2{
+    font-size: 1.9rem;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    color: orange;
+}
+
+#showcase-container p{
+    margin-bottom: 0.8rem;
+}
+
+
+/* animação */
+
+
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+}
+
+.typed-text{
+    color: green;
+}
+
+/* infos */
+
+#infos{
+    padding: 2rem 1rem;
+
+    background: #eee;
+}
+
+
+.info{
+    display: flex;
+
+}
+
+/* img info */
+
+.info img{
+    width: 40rem;
+    
+    box-shadow: 35px 29px 137px -37px #ec9a34;
+    -webkit-box-shadow: 35px 29px 137px -37px #ec9a34;
+    -moz-box-shadow: 35px 29px 137px -37px #ec9a34;
+    
+    border-radius: 14px;
+
+    margin: 0rem 2rem;
+
+    transition: 650ms;
+
+
+}
+
+.info-text p {
+    margin-bottom: 2rem;
+}
+
+.info-text p:last-child{
+    margin-bottom: 0rem;
+}
+
+.info-text p:first-child {
+    margin-top: 2rem;
+}
+
+/* galery info */
+
+.galery-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+
+}
+
+.galery-info img{
+    width: 28%;
+
+    margin-left: 2.3rem;
+
+    transition: 500ms;
+}
+
+.galery-info p:first-child{
+    margin-left: 0rem;
+}
+
+.galery-info img:hover{
+    width: 32%;
+}
+
+.galery-info img.g1{
+    width: 28%;
+}
+
+.galery-info img.g1:hover{
+    width: 30%;
+}
+
+.galery-info img.g2{
+    width: 30%;
+}
+
+.galery-info img.g2:hover{
+    width: 32%;
+}
+
+.galery-info img.g3{
+    width: 34%;
+}
+
+.galery-info img.g3:hover{
+    width: 36%;
+}
+
+.galery-info:nth-child(3) img.g2{
+    width: 31%;
+}
+.galery-info:nth-child(3) img.g2:hover{
+    width: 33%;
+}
+
+.galery-info:nth-child(3) img.g3{
+    width: 31%;
+}
+
+.galery-info:nth-child(3) img.g3:hover{
+    width: 33%;
+}
+
+/* footer */
+
+#footer{
+    background: #222;
+    color: #eee;
+    padding: 30px;
+    text-align: center;
+}
+
+#convercao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: #333;
+
+    padding: 80px 0;
+}
+
+#convercao .headline{
+    color: #eee;
+}
+
+#wrapper{
+    width: 45rem;
+    background-color: #ffffff;
+    padding: 70px 40px;
+    box-shadow: 0 20px 25px rgba(0,0,0, 0.25);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container{
+    width: 45%;
+    font-size: 18px;
+
+}
+
+.container1{
+    width: 90%;
+    font-size: 18px;
+}
+
+.container input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #d2d2d2;
+    outline: none;
+    margin-top: 8px;
+    padding: 0 10px;
+}
+
+.container input:focus{
+    border-color: rgb(3, 209, 3);
+}
